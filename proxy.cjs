@@ -11,7 +11,7 @@ app.use(express.json({ limit: "100mb" }));
 // Маршрут для формы 1
 app.post("/form1", async (req, res) => {
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbylby8HU69ivCijwa259ODKrPqXFxiPl6gKs04416hQcgqgPOGr5Vog480KDgAQnfiW/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbyfwNhN496VtM0xYERJGhXZb88JXXWnrDdN7YDSyLiQ-VGxnHcHd0GLmkjygnzH3K3-/exec", {
       method: "POST",
       body: JSON.stringify(req.body),
       headers: { "Content-Type": "text/plain" }, 
@@ -38,7 +38,7 @@ app.post("/form1", async (req, res) => {
 app.post("/form2", async (req, res) => {
   try {
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbylby8HU69ivCijwa259ODKrPqXFxiPl6gKs04416hQcgqgPOGr5Vog480KDgAQnfiW/exec",
+      "https://script.google.com/macros/s/AKfycbyfwNhN496VtM0xYERJGhXZb88JXXWnrDdN7YDSyLiQ-VGxnHcHd0GLmkjygnzH3K3-/exec",
       {
         method: "POST",
         body: JSON.stringify(req.body),
