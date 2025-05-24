@@ -5,8 +5,8 @@ const fetch = require("node-fetch");
 const app = express();
 const port = process.env.PORT || 3001;  
 app.use(cors());
-app.use(express.text({ type: "text/plain", limit: "50mb" }));
-app.use(express.json({ limit: "50mb" }));
+app.use(express.text({ type: "text/plain", limit: "100mb" }));
+app.use(express.json({ limit: "100mb" }));
 
 // Маршрут для формы 1
 app.post("/form1", async (req, res) => {
