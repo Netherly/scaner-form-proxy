@@ -67,7 +67,7 @@ app.post("/form2", async (req, res) => {
 app.post("/form3", async (req, res) => {
   try {
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycby-RPdj6gikDVIL1Nf_QoKr8MzvdOFMKXLaFyET4t-N4SU-LQTZ0Dz_Sh141kK_WMF_/exec",
+      "https://script.google.com/macros/s/AKfycbw9vxOnyw98ERxFqL645Hpk1LgPAsPNp7UHSy1FrtO0TmYgt4aTwLw7-k0dqaUD6DXg/exec",
       {
         method: "POST",
         body: JSON.stringify(req.body),
@@ -97,7 +97,7 @@ app.post("/form4", async (req, res) => {
   console.log("Получен запрос на /form4 с телом:", req.body);
   try {
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycby-RPdj6gikDVIL1Nf_QoKr8MzvdOFMKXLaFyET4t-N4SU-LQTZ0Dz_Sh141kK_WMF_/exec",
+      "https://script.google.com/macros/s/AKfycbw9vxOnyw98ERxFqL645Hpk1LgPAsPNp7UHSy1FrtO0TmYgt4aTwLw7-k0dqaUD6DXg/exec",
       {
         method: "POST",
         body: JSON.stringify(req.body),
