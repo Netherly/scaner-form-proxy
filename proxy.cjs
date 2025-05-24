@@ -11,7 +11,7 @@ app.use(express.json({ limit: "50mb" }));
 // Маршрут для формы 1
 app.post("/form1", async (req, res) => {
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbyTKZ4z840J6leWUKr6SukYQsuooRh4kINSsi7pwY2MCQ-yfpF0Ckqkg7Uwo3tfj2uf/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbylby8HU69ivCijwa259ODKrPqXFxiPl6gKs04416hQcgqgPOGr5Vog480KDgAQnfiW/exec", {
       method: "POST",
       body: JSON.stringify(req.body),
       headers: { "Content-Type": "text/plain" }, 
@@ -38,7 +38,7 @@ app.post("/form1", async (req, res) => {
 app.post("/form2", async (req, res) => {
   try {
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbyTKZ4z840J6leWUKr6SukYQsuooRh4kINSsi7pwY2MCQ-yfpF0Ckqkg7Uwo3tfj2uf/exec",
+      "https://script.google.com/macros/s/AKfycbylby8HU69ivCijwa259ODKrPqXFxiPl6gKs04416hQcgqgPOGr5Vog480KDgAQnfiW/exec",
       {
         method: "POST",
         body: JSON.stringify(req.body),
@@ -67,7 +67,7 @@ app.post("/form2", async (req, res) => {
 app.post("/form3", async (req, res) => {
   try {
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbwza8zfDyK65DJE_7abVHBVb0F_wO7APWK2C6xWB5nOouFKH3rjTvwYWv0M1QJqZ5lB/exec",
+      "https://script.google.com/macros/s/AKfycby-RPdj6gikDVIL1Nf_QoKr8MzvdOFMKXLaFyET4t-N4SU-LQTZ0Dz_Sh141kK_WMF_/exec",
       {
         method: "POST",
         body: JSON.stringify(req.body),
@@ -97,7 +97,7 @@ app.post("/form4", async (req, res) => {
   console.log("Получен запрос на /form4 с телом:", req.body);
   try {
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbwza8zfDyK65DJE_7abVHBVb0F_wO7APWK2C6xWB5nOouFKH3rjTvwYWv0M1QJqZ5lB/exec",
+      "https://script.google.com/macros/s/AKfycby-RPdj6gikDVIL1Nf_QoKr8MzvdOFMKXLaFyET4t-N4SU-LQTZ0Dz_Sh141kK_WMF_/exec",
       {
         method: "POST",
         body: JSON.stringify(req.body),
